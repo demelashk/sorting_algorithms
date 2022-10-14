@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "
+#########################################
+# Lazy push                             #
+# Author : Bk                           #
+#########################################
+"
+
+read x y z
+betty $x $y $z
+git add $x $y $z
+echo "Enter commit message"
+read c
+git commit -m "${c}"
+git push
